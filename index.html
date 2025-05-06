@@ -110,6 +110,30 @@
       max-width: 600px;
       margin: auto;
     }
+    #discord-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #5865F2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease;
+}
+#discord-btn:hover {
+  transform: scale(1.1);
+}
+#discord-btn img {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
+
     .past-entries-visible { display: block; }
   </style>
 </head>
@@ -239,6 +263,9 @@
 
     renderEntries(); updateCounter();
   </script>
+<a href="https://discord.gg/u3A4zjCNjb" target="_blank" id="discord-btn" title="Discord">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord" />
+</a>
 
 </body>
 </html>
